@@ -3,7 +3,7 @@ sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: POST hthttps://studies.cs.helsinki.fi/exampleapp/new_note
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     server-->>browser: HTTP status code 302 - Do new HTTP GET Request
     deactivate server
